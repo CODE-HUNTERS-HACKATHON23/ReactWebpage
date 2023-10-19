@@ -1,0 +1,6 @@
+/* styles.css */
+.gradient-border {
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(to right, #FF6B6B, #4299E1);
+}
