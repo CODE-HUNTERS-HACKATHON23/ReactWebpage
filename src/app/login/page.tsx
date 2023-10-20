@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function Login() {
     return (
 
-        <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg bg-gray-400 sm:px-6 md:px-8 lg:px-10">
-            <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
-                Inicia sesión
+        <div className="flex flex-col w-full max-w-md px-4 py-8 bg-gray-100 rounded-lg bg-gray-400 sm:px-6 md:px-8 lg:px-10">
+            <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-black">
+                Inicia Sesión
             </div>
             <div className="mt-8">
                 <form action="#" autoComplete="off">
