@@ -1,0 +1,69 @@
+export default function Emergencia() {
+    return (
+        <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Emergencia</title>
+        </head>
+        <body>
+                <div className="flex flex-col justify-center">
+                    <h2 className="text-center font-bold text-xl mt-4 mr-10">Emergencia</h2>
+                </div>
+
+                <div className=" p-4 rounded-lg">
+                   <div className="mt-4">
+                        <div className="flex items-center bg-blue-200">
+                            <div className="p-4 rounded-l">
+                                <span className="text-sm font-bold">Buscar paciente</span>
+                            </div>
+                            <input className="pl-2 w-full border border-blue-400 rounded-r" type="text" placeholder="Nombres y apellidos" />
+                            <span className="p-2  text-blue-600 rounded-r-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 16.5714L20.5714 21.1429" />
+                                    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M11 18C15.9706 18 19.8219 13.1078 20.5714 8M11 18C6.02944 18 2.17807 13.1078 1.42857 8 0.674557 2.88571 4.22038 0 8 0c2.12507 0 4.1632 0.801551 5.74174 2.25868 1.46103 1.40127 2.25868 3.32821 2.25868 5.34132 0 4.41828-3.58172 8-8 8zM11 18C6.5629 18 3 14.4371 3 10S6.5629 2 11 2s8 3.5629 8 8-3.5629 8-8 8z" />
+                                </svg>
+                            </span>
+
+                            </div>
+                        <div className="mt-4 flex items-center">
+                            <div className="ml-4">
+                                <span className="font-bold text-sm">Establecimiento de salud:</span>
+                            </div>
+                            <input className="ml-2 border border-blue-400 rounded" type="text" />
+                            <div className="ml-20">
+                                <span className="font-bold text-sm ml-20">SILAIS:</span>
+                            </div>
+                            <input className="ml-2 border border-blue-400 rounded" />
+                        </div>
+
+                        <div className="flex flex-col items-center ml-40">
+                            <h3 className="font-bold text-xl mt-8 mr-20">Evolución y tratamiento</h3>
+                            <table className="w-full border border-collapse border-pink-500">
+                                <thead>
+                                    <tr>
+                                        <th className="border p-2 text-pink-600">Fecha y hora</th>
+                                        <th className="border p-2 text-pink-600">Evolución</th>
+                                        <th className="border p-2 text-pink-600">Planes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {/* agregar filas */}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div className="flex items-center mt-8">
+                            <span className="text-pink-600 max-w-6">Fecha de egreso</span>
+                            <span className="ml-4 text-pink-600 ml-40">Hora de egreso</span>
+                        </div>
+                        <div className="mt-2">
+                            <span className="text-pink-600">Diagnóstico general</span>
+                            <span className="text-pink-600 ml-40 max-w-5">Responsable que retira al usuario</span>
+                        </div>
+
+                    </div>
+                </div>       
+        </body>
+        </html>
+    );
+}
